@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="jquery.mobile-1.4.5.min.css">
+    <script src="jquery-1.11.2.min.js"></script>
+    <script src="jquery.mobile-1.4.5.min.js"></script>
+    <script src="jquery.min.js"></script>
+  </head>
+  <body >
+    <div data-role="page" id="pagetwo" data-theme="b">
+      <div data-role="header">
+        <h1>Login</h1>
+        <a href="index.html" class="ui-btn ui-btn-inline ui-icon-home ui-btn-icon-notext ui-corner-all ui-shadow" data-transition="turn" data-direction="reverse"></a>
+      </div>
+        <form action="signin.php" method="post">
+          <fieldset>  
+            <input type="email" placeholder="Email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" oninvalid="setCustomValidity('Please enter a valid email id')" onkeyup="try{setCustomValidity('')}catch(e){}" required /><br>
+            <input type="password" placeholder="Password" name="password" required /><br>
+            <input type="submit" value="Login" name="submit" /></a>
+          </fieldset>
+        </form>
+    </div>
+  </body>
+</html>

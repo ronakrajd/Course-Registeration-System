@@ -1,0 +1,50 @@
+    <!DOCTYPE html>
+    <html>
+    <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="jquery.mobile-1.4.5.min.css">
+    <script src="jquery-1.11.2.min.js"></script>
+    <script src="jquery.mobile-1.4.5.min.js"></script>
+    <script src="jquery.min.js"></script>
+    </head>
+    <body >
+      <center><div data-role="page" id="pagetwo" data-theme="b">
+      <div data-role="header">
+        <h1>Register</h1>
+      
+      <a href="menu.html" class="ui-btn ui-btn-inline ui-icon-home ui-btn-icon-notext ui-corner-all ui-shadow" data-transition="slide" data-direction="reverse"></a>
+
+     </div>
+     <div  data-theme="b"></div></br></br></br></br></br>
+
+      <form action="register.php" method="post">
+      <fieldset>
+          <input type="text"  placeholder="First Name" name="FirstName" maxlength="25" required>
+          <input type="text" placeholder="Last Name" name="LastName" required>
+          <input type="email" placeholder="Email" name="email" required>
+          <input type="text" pattern="[789][0-9]{9}" placeholder="Contact No." name="contact" required>
+          <input type="text" placeholder="Address" name="address">
+          <select name="course" id="course">
+          <optgroup label="Technical">
+            <option value="btech">B.Tech</option>
+            <option value="mtech">M.Tech</option>
+            <option value="msc">M.Sc.</option>
+          </optgroup>
+          <optgroup label="Other Courses">
+            <option value="java">Java</option>
+            <option value="oracle">Oracle</option>
+            <option value="redhat">Red Hat</option>
+            <option value="ccna">CCNA</option>
+          </optgroup>
+        </select>
+          <input type="submit" name="submit" value="Submit" >
+      </fieldset>
+      </form></div>
+      </center>
+
+      <div data-role="footer">
+    <h1>Opportunities don't happen. You create them.</h1>
+  </div>
+
+    </body>
+    </html>

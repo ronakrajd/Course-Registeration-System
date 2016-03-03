@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="jquery.mobile-1.4.5.min.css">
+    <script src="jquery-1.11.2.min.js"></script>
+    <script src="jquery.mobile-1.4.5.min.js"></script>
+    <script src="jquery.min.js"></script>
+    <style>
+    .ui-input-text
+      {
+        width: 500px;
+      }
+
+
+  @media screen and (max-width: 300px) {
+              .ui-input-text
+              {
+                  width: 100px;
+              }
+            }
+</style>
+
+    </head>
+
+    <body >
+      <center><div data-role="page" id="pagetwo" data-theme="b"></br></br></br></br></br>
+      <div data-role="header" style="width:500px">
+        <h3>Sign Up</h3>
+      
+      <a href="index.html" class="ui-btn ui-btn-inline ui-icon-home ui-btn-icon-notext ui-corner-all ui-shadow " data-transition="slide" data-direction="reverse"></a>
+
+     </div>
+     <div  data-theme="a"></div></br></br></br></br></br>
+
+      <form action="signup.php" method="post">
+      <fieldset>
+          <input type="text"  placeholder="First Name" name="FirstName" maxlength="25" required>
+          <input type="text" placeholder="Last Name" name="LastName" required>
+          <input type="email" placeholder="Email" name="email" required>
+          <input type="password" placeholder="Password" name="password" maxlength="25" minlength="5" required></br> 
+          <div style="width:250px"><input type="submit" name="submit" value="Submit" ></div>
+      </fieldset>
+      </form></br></br></br>
+
+      <div data-role="footer">
+    <h1>Opportunities don't happen. You create them.</h1>
+  </div>
+    </div>
+      </center>
+    </body>
+    </html>
